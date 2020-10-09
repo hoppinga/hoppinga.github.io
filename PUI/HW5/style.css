@@ -1,0 +1,342 @@
+/* BODY */
+body {
+    margin: 0;
+    background-color: #FFFEF9;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
+
+.utility-nav {
+    background-color: #9395AA;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.utility-nav-links {
+    text-align: right;
+    padding-right: 30px;
+
+}
+.utility-nav-links a {
+    text-decoration: none;
+    color: #FFFEF9;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 30px;
+}
+
+.utility-nav a:hover{
+    text-decoration: underline;
+}
+
+.logo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+    width: 238px;
+    display: block;
+    float: left;
+    position: center;
+}
+
+header nav {
+    float: right;
+    margin: auto;
+
+    padding-top: 25px;
+}
+
+header nav a {
+    color: #151515;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    padding-left: 45px;
+    padding-right: 60px;
+    display: inline;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+}
+
+/* HOMEPAGE */
+
+/* HERO */
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    position: inline-block;
+}
+
+.hero-image .button-white {
+    color: #FFFEF9;
+    border-color: #FFFEF9;
+    border-style: solid;
+    border-radius: 23px;
+    border-width: 2px;
+    text-decoration: none;
+    padding: 10px 25px;
+    margin: 0px 40px 0px 0;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+}
+
+.hero-image .button-white:hover{
+    color: #151515;
+    background-color: #FFFEF9;
+    border-color: #FFFEF9;
+}
+
+
+/* OUR COMMUNITY ADVENTURES */
+
+h1 {
+    text-align: center;
+    background-color: #9395AA;
+    color: #FFFEF9;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    width: 380px;
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    padding: 8px 20px;
+    display: inline-block;
+}
+
+.community-adventure-home {
+    display: grid;
+    grid-template-columns: 240px 240px 240px 240px 240px; 
+    grid-column-gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.community-adventure-home img {
+    width: 240px;
+    display: inline-block;
+}
+
+.community-adventure-home figcaption {
+    text-align: center;
+}
+
+h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+}
+
+.community-adventure-home .black-button{
+    color: #151515;
+    border-color: #151515;
+    border-style: solid;
+    border-radius: 23px;
+    border-width: 2px;
+    text-decoration: none; 
+    padding: 10px 25px;
+    display: inline-block;  
+}
+
+.community-adventure-home .black-button:hover{
+    color: #FFFEF9;
+    background-color: #151515;
+    border-color: #151515;
+}
+
+/* BOTTOM BANNER */
+
+.bottom-banner {
+    background-color: #151515;
+    margin-top: 75px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: inline-block;
+    color: #FFFEF9;
+    text-align: center;
+}
+
+.bottom-banner .button-white {
+    color: #FFFEF9;
+    border-color: #FFFEF9;
+    border-style: solid;
+    border-radius: 23px;
+    border-width: 2px;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+    margin: 15px;
+}
+
+.bottom-banner .button-white:hover{
+    color: #151515;
+    background-color: #FFFEF9;
+    border-color: #FFFEF9;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #9395AA;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: flex;
+    min-height: 150px;
+    color: #FFFEF9;
+    align-items: baseline;
+}
+
+.logo-white {
+    display: inline;
+    margin: 60px;
+    vertical-align: middle;
+}
+
+ul {
+    display: inline-block;
+    margin-right: 66px;
+    list-style-type: none;
+    vertical-align: middle;
+}
+
+ul a, .address{
+    text-decoration: none;
+    font-size: 14px;
+    color: #FFFEF9;
+    font-weight: 200;
+    line-height: 20px;
+}
+
+ul a:hover{
+    text-decoration: underline;
+}
+
+/* ALL PRODUCTS PAGE */
+
+.product-browsing-title{
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.full-width {
+    color: #FFFEF9;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    min-width: 1220px;
+}
+
+.sort-menu{
+    text-align: right;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    align-items: baseline;
+}
+
+.caret {
+    vertical-align: middle;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-column-gap: 30px;
+    grid-row-gap: 60px;
+    justify-content: center;
+}
+
+.product-browsing-image {
+    width: 400px;
+}
+
+.other-options {
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.product-name-browsing{
+    padding-top: 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #151515;
+}
+
+.product-name-browsing:hover{
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.breadcrumbs {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 30px;
+    float: left;
+    justify-content: left;
+    text-align: left;
+}
+
+h5 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: inline-block;
+    position: relative;
+    color: #151515;
+    margin-left: 60px;
+    width: 100%;
+}
+
+.product-detail-image1 {
+    display: inline-block;
+    position: relative;
+    width: 55%;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+.secondary-images {
+    display: inline-block;
+    position: relative;
+    margin-left: 60px;
+}
+
+.product-detail-image2 {
+    width: 160px;
+    margin-right: 10px;
+    align-self: center;
+}
+
