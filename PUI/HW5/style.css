@@ -3,6 +3,10 @@ body {
     margin: 0;
     background-color: #FFFEF9;
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    font-weight: 500;
 }
 
 /* HEADER */
@@ -74,6 +78,14 @@ header nav a:hover{
     position: inline-block;
 }
 
+.hero-buttons {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    align-items: center;
+}
+
 .hero-image .button-white {
     color: #FFFEF9;
     border-color: #FFFEF9;
@@ -83,12 +95,6 @@ header nav a:hover{
     text-decoration: none;
     padding: 10px 25px;
     margin: 0px 40px 0px 0;
-    position: absolute;
-    display: grid;
-    grid-template-columns: 100px 100px;
-    text-align: center;
-    top: 50%;
-    left: 50%;
 }
 
 .hero-image .button-white:hover{
@@ -298,6 +304,8 @@ a {
     text-decoration: none;
 }
 
+/* DOG HARNESS */
+
 .breadcrumbs {
     display: inline-block;
     position: relative;
@@ -339,4 +347,27 @@ h5 {
     margin-right: 10px;
     align-self: center;
 }
+
+.product-details {
+    display: inline-block;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #151515;
+    padding: 20px;
+    max-width: 532px;
+}
+
+h4 {
+    display: inline;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+h4 span {
+    float: right;
+}
+
 
