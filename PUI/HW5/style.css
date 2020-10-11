@@ -124,15 +124,15 @@ h1 {
     padding-bottom: 5px;
     padding-right: 20px;
     padding-left: 20px;
-    display: inline-block;
+    
 }
 
 .community-adventure-home {
     display: grid;
-    grid-template-columns: 240px 240px 240px 240px 240px; 
+    grid-template-columns: 240px 240px 240px 240px 160px; 
     grid-column-gap: 30px;
     text-align: center;
-    justify-content: center;
+    margin-left: 60px;
 }
 
 .community-adventure-home img {
@@ -143,6 +143,10 @@ h1 {
 .community-adventure-home figcaption {
     text-align: center;
     margin: 0;
+}
+
+.community-CTA {
+    padding-top: 40px;
 }
 
 h3 {
@@ -263,12 +267,7 @@ ul a:hover{
     min-width: 1220px;
 }
 
-/*.sort-menu{
-    text-align: right;
-    padding-right: 30px;
-    padding-bottom: 10px;
-    align-items: baseline;
-} */
+/* SORT DROPDOWN*/
 
 .dropdown-button {
     background-color: #FFFEF9;
@@ -283,6 +282,7 @@ ul a:hover{
 }
 
 .dropdown-content {
+    font-size: 12px;
     display: none;
     position: absolute;
     background-color: #FFFEF9;
@@ -305,6 +305,8 @@ ul a:hover{
 .caret {
     vertical-align: middle;
 }
+
+/* PRODUCTS */
 
 .product-grid {
     display: grid;
@@ -401,6 +403,8 @@ h5 {
     margin-right: 10px;
     align-self: center;
 }
+
+/* DETAIL TILE */
 
 .product-details {
     position: absolute;
