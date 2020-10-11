@@ -512,7 +512,7 @@ h4 {
     line-height: 36px;
 }
 
-#underline {
+.underline {
     border-bottom: solid;
     border-width: 1px;
 }
