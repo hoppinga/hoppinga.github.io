@@ -7,6 +7,7 @@ body {
     line-height: 20px;
     font-style: normal;
     font-weight: 500;
+    color: #151515
 }
 
 /* HEADER */
@@ -116,11 +117,13 @@ h1 {
     font-size: 24px;
     width: 380px;
     height: 30px;
-    vertical-align: middle;
     margin-left: 60px;
     margin-bottom: 20px;
     margin-top: 60px;
-    padding: 8px 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
     display: inline-block;
 }
 
@@ -128,8 +131,8 @@ h1 {
     display: grid;
     grid-template-columns: 240px 240px 240px 240px 240px; 
     grid-column-gap: 30px;
-    justify-content: center;
     text-align: center;
+    justify-content: center;
 }
 
 .community-adventure-home img {
@@ -139,6 +142,7 @@ h1 {
 
 .community-adventure-home figcaption {
     text-align: center;
+    margin: 0;
 }
 
 h3 {
@@ -147,6 +151,7 @@ h3 {
     font-weight: 300;
     font-size: 16px;
     text-align: center;
+    margin-top: 0;
 }
 
 .community-adventure-home .black-button{
@@ -258,11 +263,43 @@ ul a:hover{
     min-width: 1220px;
 }
 
-.sort-menu{
+/*.sort-menu{
     text-align: right;
     padding-right: 30px;
     padding-bottom: 10px;
     align-items: baseline;
+} */
+
+.dropdown-button {
+    background-color: #FFFEF9;
+    border: none; 
+    font-family: Montserrat;
+    margin: 60px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFEF9;
+}
+
+.dropdown-content a {
+    color: #151515;
+    padding: 5px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .caret {
@@ -304,17 +341,28 @@ a {
     text-decoration: none;
 }
 
-/* DOG HARNESS */
+/* DOG HARNESS PAGE */
 
 .breadcrumbs {
+    color: #151515;
     display: inline-block;
     position: relative;
     margin-bottom: 30px;
-    float: left;
     justify-content: left;
     text-align: left;
+    width: 90%;
+    margin-left: 60px;
 }
 
+.breadcrumbs a {
+    text-decoration: underline;
+    color: #151515;
+
+}
+
+h4 span {
+    float: right;
+}
 
 h5 {
     font-family: Montserrat;
@@ -346,7 +394,6 @@ h5 {
     display: inline;
     position: relative;
     margin-left: 60px;
-    margin-bottom: 50px;
 }
 
 .product-detail-image2 {
@@ -435,11 +482,24 @@ h5 {
 /* REVIEWS */
 
 .reviews {
-    margin-left: 170px;
-    margin-right: 170px;
+    width: 1000px;
+    position: relative;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.review-title {
+    padding-top: 50px;
+    color: #151515;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
 }
 
 h4 {
+    color: #151515;
     display: inline;
     font-family: Montserrat;
     font-style: normal;
@@ -453,11 +513,17 @@ h4 {
     border-width: 1px;
 }
 
-#review-item {
-    color: #151515;
+.review-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.black-button {
+#review-item {
+    color: #151515;
+    margin: 0;
+}
+
+#black-button {
     color: #151515;
     border-color: #151515;
     border-style: solid;
@@ -468,14 +534,20 @@ h4 {
     float: right;
 }
 
-.black-button:hover {
+#black-button:hover {
     color: #FFFEF9;
     background-color: #151515;
     border-color: #151515;
 }
 
+.review-content {
+    margin-top: 30px;
+    display: flex;
+}
+
 .review-text {
-    float: right;
     width: 600px;
+    margin-left: 100px;
+    margin-bottom: 30px;
 }
 
