@@ -343,7 +343,7 @@ a {
 
 /* DOG HARNESS PAGE */
 
-.breadcrumbs {
+.breadcrumbs, .continue-shopping {
     color: #151515;
     display: inline-block;
     position: relative;
@@ -354,7 +354,7 @@ a {
     margin-left: 60px;
 }
 
-.breadcrumbs a {
+.breadcrumbs a, .continue-shopping a {
     text-decoration: underline;
     color: #151515;
 
@@ -431,7 +431,8 @@ h5 {
     display: inline-flex;
 }
 
-.size-tiles {
+.size-tiles button{
+    border:none;
     background-color: #F4F2ED;
     padding: 10px;
     margin-left: 5px;
@@ -441,10 +442,10 @@ h5 {
     box-sizing: border-box;
 }
 
-.size-tiles:hover {
+/*.size-tiles button:active {
     border: solid;
     border-width: 1px;
-}
+}*/
 
 .product-detail-colors {
     width: 30px;
@@ -551,5 +552,47 @@ h4 {
     width: 600px;
     margin-left: 100px;
     margin-bottom: 30px;
+}
+
+/* YOUR BAG */
+
+.continue-shopping:hover {
+    text-decoration: underline;
+}
+
+#wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.your-bag {
+    float: left;
+    position: relative;
+    display: inline;
+    margin-left: 60px;
+}
+
+.bag-items {
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+}
+
+.order-summary {
+    float: right;
+    position: absolute;
+    left: 65%;
+    margin-right: 60px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #151515;
+    padding: 20px;
+}
+
+.clear-button {
+    border:none;
+    background:none;
+    float: right;
+
 }
 

@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 	<!-- styles -->
-		<link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
 		<title>Dog Harness - Muddy Paws Adventure Gear</title>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:light,semi-bold,bold,medium" rel="stylesheet">
 		<meta charset="UTF-8">
@@ -78,20 +78,22 @@
                 </ul>
             </div>
             <div>
-                <strong>Size:</strong> Medium (40-60 lbs)
+                <strong>Size:</strong> <span id="size-text"></span>
             </div>
             <div class="product-detail-size-selector">
-                <div class="size-tiles">Tiny</div>
-                <div class="size-tiles">Small</div>
-                <div class="size-tiles">Med</div>
-                <div class="size-tiles">Large</div>
+                <div class="size-tiles"><button type = "button" id="size-button-tiny">Tiny</button></div>
+                <div class="size-tiles"><button type = "button" id="size-button-small">Small</button></div>
+                <div class="size-tiles"><button type = "button" id="size-button-med">Med</button></div>
+                <div class="size-tiles"><button type = "button" id="size-button-large">Large</button></div>
             </div>
             <div>
-                <div><strong>Color:</strong> Strawberry</div>
-                <img src="images/Strawberry.png" class="product-detail-colors" alt="strawberry">
-                <img src="images/FireOrange.png" class="product-detail-colors" alt="fire orange">
-                <img src="images/Crazyberry.png" class="product-detail-colors" alt="crazyberry">
-                <img src="images/Blackberry.png" class="product-detail-colors" alt="blackberry">
+                <div>
+                    <strong>Color:</strong> <span id="color-text"></span>
+                </div>
+                <button type="button" id="color-button-strawberry"><img src="images/Strawberry.png" class="product-detail-colors" alt="strawberry"></button>
+                <button type="button" id="color-button-fire-orange"><img src="images/FireOrange.png" class="product-detail-colors" alt="fire orange"></button>
+                <button type="button" id="color-button-crazyberry"><img src="images/Crazyberry.png" class="product-detail-colors" alt="crazyberry"></button>
+                <button type="button" id="color-button-blackberry"><img src="images/Blackberry.png" class="product-detail-colors" alt="blackberry"></button>
             </div>
             <div>
                 <a href="cart.html" class="add-to-bag-button">Add to Bag</a>
@@ -161,6 +163,7 @@
 				</ul>
 			</div>
         </nav>
+        <script src="main.js"></script>
     </body>
 </html>
 
