@@ -69,3 +69,9 @@ colorButtonBlackberry.onclick = function (e) {
     let colorText = document.getElementById("color-text");
     colorText.innerHTML = "Blackberry";
 };
+
+//increments # of items in bag by 1 when clicked
+let i = 0;
+function addToBag() {
+    document.getElementById('bag-number').innerHTML = ++i;
+}

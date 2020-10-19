@@ -29,7 +29,7 @@
 					<a href="cats.html" class="main-nav-link">Cats</a>
 					<a href="all-products.html" class="main-nav-link">All Products</a>
 					<a href="bag.html">
-						<img src="images/bag.svg" alt="your bag"/> 
+						<img src="images/bag.svg" alt="your bag"><span id="bag-number"></span>
 					</a>
 				</nav>
 			</div>
@@ -90,13 +90,13 @@
                 <div>
                     <strong>Color:</strong> <span id="color-text"></span>
                 </div>
-                <button type="button" id="color-button-strawberry"><img src="images/Strawberry.png" class="product-detail-colors" alt="strawberry"></button>
-                <button type="button" id="color-button-fire-orange"><img src="images/FireOrange.png" class="product-detail-colors" alt="fire orange"></button>
-                <button type="button" id="color-button-crazyberry"><img src="images/Crazyberry.png" class="product-detail-colors" alt="crazyberry"></button>
-                <button type="button" id="color-button-blackberry"><img src="images/Blackberry.png" class="product-detail-colors" alt="blackberry"></button>
+                <button type="button" id="color-button-strawberry" class="color-buttons"></button>
+                <button type="button" id="color-button-fire-orange" class="color-buttons"></button>
+                <button type="button" id="color-button-crazyberry" class="color-buttons"></button>
+                <button type="button" id="color-button-blackberry" class="color-buttons"></button>
             </div>
             <div>
-                <a href="cart.html" class="add-to-bag-button">Add to Bag</a>
+                <button class="add-to-bag-button" id="add-to-bag" onclick="addToBag()">Add to Bag</button>
             </div>
         </div>
 
