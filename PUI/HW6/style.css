@@ -618,23 +618,22 @@ h4 {
 }
 
 .your-bag {
+    display: relative;
+    width: 55%;
     float: left;
     margin-left: 60px;
     margin-top: 20px;
-    margin-bottom: 180px;
 }
 
 .bag-items {
     display: inline-block;
-    position: relative;
-    margin-left: 20px;
 }
 
 .order-summary {
     float: left;
     position: absolute;
     display:inline-block;
-    margin-top: 68px;
+    margin-right: 60px;
     left: 65%;
     border-style: solid;
     border-width: 2px;
@@ -652,6 +651,15 @@ h4 {
     float: right;
 
 }
+.order-summary-text {
+    font-size: 20px;
+    padding-top: 20px;
+    line-height: 40px;
+}
+
+.your-bag button {
+    float: right;
+}
 .continue-to-checkout {
     font-family: Montserrat;
     color: #151515;
@@ -666,4 +674,39 @@ h4 {
     display: flex;
 }
 
+h6 {
+    font-size: 24px;
+}
 
+/* CONTACT US */
+
+.section-headline {
+    text-align: center;
+    background-color: #9395AA;
+    color: #FFFEF9;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    display:inline-block;
+    width: auto;
+    margin-left: 60px;
+    margin-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 500;
+    max-width: 55%;
+    margin-left: 60px;
+}
+
+.contact-info {
+    padding-bottom: 80px;
+}
