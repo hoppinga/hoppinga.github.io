@@ -1,3 +1,19 @@
+//SIZE SELECTION
+
+//only allows one size button to be selected at a time (selected state moves)
+const sizeButtons = document.querySelectorAll("[name=size-tiles-dog-harness]");
+let selectedButton;
+sizeButtons.forEach((sizeTileButton) => {
+    sizeTileButton.addEventListener('click', () => {
+    if (selectedButton) {
+      selectedButton.style.removeProperty('border');
+    }
+    selectedButton = sizeTileButton;
+    sizeTileButton.style.border = 'solid';
+    sizeTileButton.style.borderWidth = '1px';
+  })
+})
+
 //changes displayed size to Tiny
 let sizeButtonTiny= document.getElementById("size-button-tiny");
 sizeButtonTiny.onclick = function (e) {
@@ -5,7 +21,6 @@ sizeButtonTiny.onclick = function (e) {
     console.log(e);
     let sizeText = document.getElementById("size-text");
     sizeText.innerHTML = "Tiny (5-20 lbs)";
-
 };
 
 //changes displayed size to Small
@@ -34,6 +49,24 @@ sizeButtonLarge.onclick = function (e) {
     let sizeText = document.getElementById("size-text");
     sizeText.innerHTML = "Large (60-90 lbs)";
 };
+
+
+//COLOR SELECTION
+
+//only allows one color button to be selected at a time (selected state moves)
+const colorButtons = document.querySelectorAll("[name=colors]");
+let selectedColorButton;
+colorButtons.forEach((colorTileButton) => {
+    colorTileButton.addEventListener('click', () => {
+    if (selectedColorButton) {
+      selectedColorButton.style.removeProperty('border');
+    }
+    selectedColorButton = colorTileButton;
+    colorTileButton.style.border = 'solid';
+    colorTileButton.style.borderWidth = '1px';
+    colorTileButton.style.padding = "10px";
+  })
+})
 
 //changes displayed color/image to Strawberry
 let colorButtonStrawberry= document.getElementById("color-button-strawberry");
