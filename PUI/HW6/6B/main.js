@@ -15,48 +15,40 @@ sizeButtons.forEach((sizeTileButton) => {
 })
 
 //changes displayed size to Tiny
-let sizeButtonTiny = document.getElementById("size-button");
-document.onload = function() {
-    sizeButtonTiny.onclick = function (e) {
-        e.preventDefault();
-        console.log(e);
-        let sizeText = document.getElementById("size-text");
-        sizeText.innerHTML = "Tiny (5-20 lbs)";
-    }
+let sizeButtonTiny= document.getElementById("size-button-tiny");
+sizeButtonTiny.onclick = function (e) {
+    e.preventDefault();
+    console.log(e);
+    let sizeText = document.getElementById("size-text");
+    sizeText.innerHTML = "Tiny (5-20 lbs)";
 };
 
 //changes displayed size to Small
 let sizeButtonSmall= document.getElementById("size-button-small");
-document.onload = function() {
-   sizeButtonSmall.onclick = function (e) {
-        e.preventDefault();
-        console.log(e);
-        let sizeText = document.getElementById("size-text");
-        sizeText.innerHTML = "Small (20-40 lbs)";
-    };
-}
+sizeButtonSmall.onclick = function (e) {
+    e.preventDefault();
+    console.log(e);
+    let sizeText = document.getElementById("size-text");
+    sizeText.innerHTML = "Small (20-40 lbs)";
+};
 
 //changes displayed size to Med
 let sizeButtonMed= document.getElementById("size-button-med");
-document.onload = function() {
-    sizeButtonMed.onclick = function (e) {
-        e.preventDefault();
-        console.log(e);
-        let sizeText = document.getElementById("size-text");
-        sizeText.innerHTML = "Med (40-60 lbs)";
-    };
-}
+sizeButtonMed.onclick = function (e) {
+    e.preventDefault();
+    console.log(e);
+    let sizeText = document.getElementById("size-text");
+    sizeText.innerHTML = "Med (40-60 lbs)";
+};
 
 //changes displayed size to Large
 let sizeButtonLarge= document.getElementById("size-button-large");
-document.onload = function() {
-    sizeButtonLarge.onclick = function (e) {
-        e.preventDefault();
-        console.log(e);
-        let sizeText = document.getElementById("size-text");
-        sizeText.innerHTML = "Large (60-90 lbs)";
-    };
-}
+sizeButtonLarge.onclick = function (e) {
+    e.preventDefault();
+    console.log(e);
+    let sizeText = document.getElementById("size-text");
+    sizeText.innerHTML = "Large (60-90 lbs)";
+};
 
 
 //COLOR SELECTION
@@ -78,67 +70,59 @@ colorButtons.forEach((colorTileButton) => {
 
 //changes displayed color/image to Strawberry
 let colorButtonStrawberry= document.getElementById("color-button-strawberry");
-document.onload = function() {
-    colorButtonStrawberry.onclick = function (e) {
-        e.preventDefault();
-        console.log(e);
-        let colorText = document.getElementById("color-text");
-        colorText.innerHTML = "Strawberry";
-        let imageSrc = document.getElementById("dog-harness-1-large");
-        imageSrc.src = "images/dog-harness-1-large.png"
-    };
-}
+colorButtonStrawberry.onclick = function (e) {
+    e.preventDefault();
+    console.log(e);
+    let colorText = document.getElementById("color-text");
+    colorText.innerHTML = "Strawberry";
+    let imageSrc = document.getElementById("dog-harness-1-large");
+    imageSrc.src = "images/dog-harness-1-large.png"
+};
 
 //changes displayed color/image to Fire Orange
 let colorButtonFireOrange= document.getElementById("color-button-fire-orange");
-document.onload = function() {
-    colorButtonFireOrange.onclick = function (e) {
-        e.preventDefault();
-        console.log(e);
-        let colorText = document.getElementById("color-text");
-        colorText.innerHTML = "Fire Orange";
-        let imageSrc = document.getElementById("dog-harness-1-large");
-        imageSrc.src = "images/dog-harness-2-large.png"
-    };
-}
+colorButtonFireOrange.onclick = function (e) {
+    e.preventDefault();
+    console.log(e);
+    let colorText = document.getElementById("color-text");
+    colorText.innerHTML = "Fire Orange";
+    let imageSrc = document.getElementById("dog-harness-1-large");
+    imageSrc.src = "images/dog-harness-2-large.png"
+};
 
 //changes displayed color/image to Crazyberry
 let colorButtonCrazyberry= document.getElementById("color-button-crazyberry");
-document.onload = function() {
-    colorButtonCrazyberry.onclick = function (e) {
-        e.preventDefault();
-        console.log(e);
-        let colorText = document.getElementById("color-text");
-        colorText.innerHTML = "Crazyberry";
-        let imageSrc = document.getElementById("dog-harness-1-large");
-        imageSrc.src = "images/dog-harness-3-large.png"
-    };
-}
+colorButtonCrazyberry.onclick = function (e) {
+    e.preventDefault();
+    console.log(e);
+    let colorText = document.getElementById("color-text");
+    colorText.innerHTML = "Crazyberry";
+    let imageSrc = document.getElementById("dog-harness-1-large");
+    imageSrc.src = "images/dog-harness-3-large.png"
+};
+
 //changes displayed color/image to Blackberry
 let colorButtonBlackberry= document.getElementById("color-button-blackberry");
-document.onload = function() { 
-    colorButtonBlackberry.onclick = function (e) {
-        e.preventDefault();
-        console.log(e);
-        let colorText = document.getElementById("color-text");
-        colorText.innerHTML = "Blackberry";
-        let imageSrc = document.getElementById("dog-harness-1-large");
-        imageSrc.src = "images/dog-harness-4-large.png"
-    };
-}
+colorButtonBlackberry.onclick = function (e) {
+    e.preventDefault();
+    console.log(e);
+    let colorText = document.getElementById("color-text");
+    colorText.innerHTML = "Blackberry";
+    let imageSrc = document.getElementById("dog-harness-1-large");
+    imageSrc.src = "images/dog-harness-4-large.png"
+};
 
-//BAG EDITS AND ADDITIONS
+//BAG EDITS & ADDITIONS
 
 //creates array to hold bag items
 var itemArr = getCart();
 var itemArrNew = [];
 
-//checks if there are existing items in local storage and grabs them if so
 function getCart(){
     if (!JSON.parse(localStorage.getItem("order"))){
         return [];
     }
-    else {
+    else{
         return JSON.parse(localStorage.getItem("order"));
     }
 }
@@ -189,6 +173,7 @@ function addToBag() {
 
     //calls bag number function to update bag in main nav; see function below
     updateBagNumber();
+    console.log(1)
 }
 
 //updates displayed number of items in main nav Bag
@@ -206,7 +191,7 @@ function updateBagNumber() {
 }
 
 function goToBag() {
-    //grabs folder where HTML pages are stored, replaces with Bag
+    //grabs folder where HTML pages are stored, replace with Bag
     window.location.replace('bag.html');
 }
 
@@ -215,6 +200,7 @@ function bagLoaded() {
     var loadedItemArr = localStorage.getItem('order');
     itemArrNew = JSON.parse(loadedItemArr);
     var listOfItems = document.getElementById('listOfItems');
+    //var bagSubtotalUpdate = document.getElementById('bag-subtotal');
     
     for(var i=0; i<itemArrNew.length; i++) {
         var item = itemArrNew[i];
@@ -235,7 +221,6 @@ function bagLoaded() {
         5</option><option value="1">6</option><option value="1">7</option><option value="1">8</option><option value="1">\
         9</option><option value="1">10</option></select><span id="bag-item-price">$' + itemPrice + '</span></div></div></div>'
         
-
     }
     bagSubtotal();
     updateBagNumber();
@@ -269,5 +254,3 @@ function removeItem(curr) {
     bagSubtotal();
     updateBagNumber();
 }
-
-
